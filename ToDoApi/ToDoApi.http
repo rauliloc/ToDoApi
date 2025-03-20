@@ -1,0 +1,47 @@
+@ToDoApi_HostAddress = https://localhost:7232
+
+POST {{ToDoApi_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+  "name" : "Raul Urgent Task",
+  "isComplete": true
+}
+
+###
+
+POST {{ToDoApi_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+   "name": "Read Emails",
+   "isCompleted": true
+}
+
+###
+
+GET {{ToDoApi_HostAddress}}/api/todoitems
+
+###
+
+@id=1
+GET {{ToDoApi_HostAddress}}/api/todoitems/{{id}}
+
+###
+
+GET {{ToDoApi_HostAddress}}/weatherforecast
+
+###
+
+POST {{ToDoApi_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+  //ToDoItem
+}
+
+###
+
+GET {{ToDoApi_HostAddress}}/api/todoitems
+
+###
